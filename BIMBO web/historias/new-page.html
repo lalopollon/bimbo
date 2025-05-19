@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US"><head><!-- Created by Artisteer v4.3.0.60745 -->
+    <meta charset="utf-8">
+    <title>Subpage 1</title>
+    <meta name="viewport" content="initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no, width = device-width">
+
+    <!--[if lt IE 9]><script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <link rel="stylesheet" href="../style.css" media="screen">
+    <!--[if lte IE 7]><link rel="stylesheet" href="../style.ie7.css" media="screen" /><![endif]-->
+    <link rel="stylesheet" href="../style.responsive.css" media="all">
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans&amp;subset=latin">
+
+    <script src="../jquery.js"></script>
+    <script src="../script.js"></script>
+    <script src="../script.responsive.js"></script>
+
+
+
+<script>jQuery(function ($) {
+    'use strict';
+    if ($.fn.themeSlider) {
+        $(".art-slidecontainer0b4e6").each(function () {
+            var slideContainer = $(this), tmp;
+            var inner = $(".art-slider-inner", slideContainer);
+            inner.children().filter("script").remove();
+            var helper = null;
+            
+            if ($.support.themeTransition) {
+                helper = new BackgroundHelper();
+                helper.init("fade", "next", $(".art-slide-item", inner).first().css($.support.themeTransition.prefix + "transition-duration"));
+                inner.children().each(function () {
+                    helper.processSlide($(this));
+                });
+
+                
+            } else if (browser.ie && browser.version <= 8) {
+                var slidesInfo = {
+".art-slide0b4e60": {
+    "bgimage" : "url('../images/slide0b4e60.jpg')",
+    "bgposition": "0 0",
+    "images": "",
+    "positions": ""
+},
+".art-slide0b4e61": {
+    "bgimage" : "url('../images/slide0b4e61.jpg')",
+    "bgposition": "0 0",
+    "images": "",
+    "positions": ""
+},
+".art-slide0b4e62": {
+    "bgimage" : "url('../images/slide0b4e62.jpg')",
+    "bgposition": "0 0",
+    "images": "",
+    "positions": ""
+},
+".art-slide0b4e63": {
+    "bgimage" : "url('../images/slide0b4e63.jpg')",
+    "bgposition": "0 0",
+    "images": "",
+    "positions": ""
+},
+".art-slide0b4e64": {
+    "bgimage" : "url('../images/slide0b4e64.jpg')",
+    "bgposition": "0 0",
+    "images": "",
+    "positions": ""
+},
+".art-slide0b4e65": {
+    "bgimage" : "url('../images/slide0b4e65.jpg')",
+    "bgposition": "0 0",
+    "images": "",
+    "positions": ""
+}
+                };
+                $.each(slidesInfo, function(selector, info) {
+                    processElementMultiplyBg(slideContainer.find(selector), info);
+                });
+            }
+
+            inner.children().eq(0).addClass("active");
+            slideContainer.themeSlider({
+                pause: 2600,
+                speed: 600,
+                repeat: true,
+                animation: "fade",
+                direction: "next",
+                navigator: slideContainer.siblings(".art-slidenavigator0b4e6"),
+                helper: helper
+            });
+            
+                        
+        });
+    }
+});
+</script><style>.art-content .art-postcontent-0 .layout-item-0 { border-bottom-style:solid;border-bottom-width:1px;border-bottom-color:#CFD8E2; padding-right: 10px;padding-left: 10px;  }
+.art-content .art-postcontent-0 .layout-item-1 { padding-right: 10px;padding-left: 10px;  }
+.ie7 .art-post .art-layout-cell {border:none !important; padding:0 !important; }
+.ie6 .art-post .art-layout-cell {border:none !important; padding:0 !important; }
+
+.art-slidecontainer0b4e6 {
+    position: relative;
+        width: 560px;
+    height: 349px;
+        }
+
+.default-responsive .art-header .art-slidecontainer0b4e6,
+.responsive .art-header .art-slidecontainer0b4e6
+{
+  position: absolute !important;
+}
+
+.responsive .art-pageslider .art-slidecontainer0b4e6 {
+  position: absolute !important;
+}
+
+.art-slidecontainer0b4e6 .art-slide-item
+{
+
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    transform: rotate(0);
+}
+
+
+
+.art-slidecontainer0b4e6 .art-slide-item {
+    -webkit-transition: 600ms ease-in-out opacity;
+    -moz-transition: 600ms ease-in-out opacity;
+    -ms-transition: 600ms ease-in-out opacity;
+    -o-transition: 600ms ease-in-out opacity;
+    transition: 600ms ease-in-out opacity;
+    position: absolute !important;
+    display: none;
+	left: 0;
+	top: 0;
+	opacity: 0;
+    width:  100%;
+    height: 100%;
+}
+
+.art-slidecontainer0b4e6 .active, .art-slidecontainer0b4e6 .next, .art-slidecontainer0b4e6 .prev {
+    display: block;
+}
+
+.art-slidecontainer0b4e6 .active {
+    opacity: 1;
+}
+
+.art-slidecontainer0b4e6 .next, .art-slidecontainer0b4e6 .prev {
+    width: 100%;
+}
+
+.art-slidecontainer0b4e6 .next.forward, .art-slidecontainer0b4e6 .prev.back {
+    opacity: 1;
+}
+
+.art-slidecontainer0b4e6 .active.forward {
+    opacity: 0;
+}
+
+.art-slidecontainer0b4e6 .active.back {
+    opacity: 0;
+}
+
+
+.art-slide0b4e60 {
+    background-image:  url('../images/slide0b4e60.jpg');
+        /* background-size:  auto auto; */
+        background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+/* special setup for header/pageslider */
+.responsive .art-header .art-slide0b4e60 {
+    background-image:  url('../images/slide0b4e60.jpg');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.responsive .art-pageslider .art-slide0b4e60 {
+    background-image:  url('../images/slide0b4e60.jpg');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-header .art-slide0b4e60 {
+    background-image: url('../images/slide0b4e60.jpg');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-pageslider .art-slide0b4e60 {
+    background-image: url('../images/slide0b4e60.jpg');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}.art-slide0b4e61 {
+    background-image:  url('../images/slide0b4e61.jpg');
+        /* background-size:  auto auto; */
+        background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+/* special setup for header/pageslider */
+.responsive .art-header .art-slide0b4e61 {
+    background-image:  url('../images/slide0b4e61.jpg');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.responsive .art-pageslider .art-slide0b4e61 {
+    background-image:  url('../images/slide0b4e61.jpg');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-header .art-slide0b4e61 {
+    background-image: url('../images/slide0b4e61.jpg');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-pageslider .art-slide0b4e61 {
+    background-image: url('../images/slide0b4e61.jpg');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}.art-slide0b4e62 {
+    background-image:  url('../images/slide0b4e62.jpg');
+        /* background-size:  auto auto; */
+        background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+/* special setup for header/pageslider */
+.responsive .art-header .art-slide0b4e62 {
+    background-image:  url('../images/slide0b4e62.jpg');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.responsive .art-pageslider .art-slide0b4e62 {
+    background-image:  url('../images/slide0b4e62.jpg');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-header .art-slide0b4e62 {
+    background-image: url('../images/slide0b4e62.jpg');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-pageslider .art-slide0b4e62 {
+    background-image: url('../images/slide0b4e62.jpg');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}.art-slide0b4e63 {
+    background-image:  url('../images/slide0b4e63.jpg');
+        /* background-size:  auto auto; */
+        background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+/* special setup for header/pageslider */
+.responsive .art-header .art-slide0b4e63 {
+    background-image:  url('../images/slide0b4e63.jpg');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.responsive .art-pageslider .art-slide0b4e63 {
+    background-image:  url('../images/slide0b4e63.jpg');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-header .art-slide0b4e63 {
+    background-image: url('../images/slide0b4e63.jpg');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-pageslider .art-slide0b4e63 {
+    background-image: url('../images/slide0b4e63.jpg');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}.art-slide0b4e64 {
+    background-image:  url('../images/slide0b4e64.jpg');
+        /* background-size:  auto auto; */
+        background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+/* special setup for header/pageslider */
+.responsive .art-header .art-slide0b4e64 {
+    background-image:  url('../images/slide0b4e64.jpg');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.responsive .art-pageslider .art-slide0b4e64 {
+    background-image:  url('../images/slide0b4e64.jpg');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-header .art-slide0b4e64 {
+    background-image: url('../images/slide0b4e64.jpg');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-pageslider .art-slide0b4e64 {
+    background-image: url('../images/slide0b4e64.jpg');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}.art-slide0b4e65 {
+    background-image:  url('../images/slide0b4e65.jpg');
+        /* background-size:  auto auto; */
+        background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+/* special setup for header/pageslider */
+.responsive .art-header .art-slide0b4e65 {
+    background-image:  url('../images/slide0b4e65.jpg');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.responsive .art-pageslider .art-slide0b4e65 {
+    background-image:  url('../images/slide0b4e65.jpg');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-header .art-slide0b4e65 {
+    background-image: url('../images/slide0b4e65.jpg');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-pageslider .art-slide0b4e65 {
+    background-image: url('../images/slide0b4e65.jpg');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.art-slidenavigator0b4e6 {
+  display: inline-block;
+  position: absolute;
+  direction: ltr !important;
+  top: 0px;
+  left: 39.26%;
+  z-index: 101;
+  line-height: 0 !important;
+  -webkit-background-origin: border !important;
+  -moz-background-origin: border !important;
+  background-origin: border-box !important;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+    white-space: nowrap;
+    }
+.art-slidenavigator0b4e6
+{
+background: #B9C2CB;background: -webkit-linear-gradient(top, rgba(232, 235, 238, 0.6) 0, rgba(138, 153, 168, 0.6) 100%) no-repeat;background: -moz-linear-gradient(top, rgba(232, 235, 238, 0.6) 0, rgba(138, 153, 168, 0.6) 100%) no-repeat;background: -o-linear-gradient(top, rgba(232, 235, 238, 0.6) 0, rgba(138, 153, 168, 0.6) 100%) no-repeat;background: -ms-linear-gradient(top, rgba(232, 235, 238, 0.6) 0, rgba(138, 153, 168, 0.6) 100%) no-repeat;-svg-background: linear-gradient(top, rgba(232, 235, 238, 0.6) 0, rgba(138, 153, 168, 0.6) 100%) no-repeat;background: linear-gradient(to bottom, rgba(232, 235, 238, 0.6) 0, rgba(138, 153, 168, 0.6) 100%) no-repeat;
+-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;
+
+
+padding:7px;
+
+
+
+
+
+}
+.art-slidenavigator0b4e6 > a
+{
+background: #728597;
+-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;
+
+
+
+margin:0 10px 0 0;
+
+width: 10px;
+
+height: 10px;
+}
+.art-slidenavigator0b4e6 > a.active
+{
+background: #FA681E;
+-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;
+
+
+
+margin:0 10px 0 0;
+
+width: 10px;
+
+height: 10px;
+}
+.art-slidenavigator0b4e6 > a:hover
+{
+background: #455B73;
+-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;
+
+
+
+margin:0 10px 0 0;
+
+width: 10px;
+
+height: 10px;
+}
+
+</style></head>
+<body>
+<div id="art-main">
+    <div id="art-header-bg">
+            </div>
+    <div class="art-sheet clearfix">
+<header class="art-header">
+
+    <div class="art-shapes">
+        
+            </div>
+
+<h1 class="art-headline">
+    <a href="/">BIMBO MEXICO</a>
+</h1>
+
+
+
+
+
+<nav class="art-nav">
+    <ul class="art-hmenu"><li><a href="../historias.html" class="active">HISTORIAS</a><ul class="active"><li><a href="../historias/new-page.html" class="active">PRODUCTOS</a></li><li><a href="../historias/new-page-3.html">CAMPAÑAS</a></li></ul></li></ul> 
+    </nav>
+
+                    
+</header>
+<div class="art-layout-wrapper">
+                <div class="art-content-layout">
+                    <div class="art-content-layout-row">
+                        <div class="art-layout-cell art-sidebar1"><div class="art-vmenublock clearfix">
+        <div class="art-vmenublockheader">
+            <h3 class="t">Menu</h3>
+        </div>
+        <div class="art-vmenublockcontent">
+<ul class="art-vmenu"><li><a href="../historias.html" class="active">HISTORIAS</a><ul class="active"><li><a href="../historias/new-page.html" class="active">PRODUCTOS</a></li><li><a href="../historias/new-page-3.html">CAMPAÑAS</a></li></ul></li></ul>
+                
+        </div>
+</div><div class="art-block clearfix">
+        <div class="art-blockcontent"><p style="text-align: start;"><span style="color: rgb(51, 51, 51); font-family: 'Open Sans', sans-serif;">NUESTRA HISTORIA</span></p><p style="text-align: start;"><span style="color: rgb(51, 51, 51); font-family: 'Open Sans', sans-serif; font-weight: 400; background-color: rgb(246, 246, 246);">Nacimos en 1943 en la Ciudad de México y hoy en día somos una de las empresas de panificación más importante del mundo. En México somos la compañía más grande de alimentos y líder indiscutible en la panificación nacional. Varias generaciones han crecido con nosotros a lo largo de Latinoamérica, convirtiéndonos en un referente de sus tradiciones. Elaboramos y distribuimos cerca de 5000 productos y contamos con más de 100 marcas de reconocido prestigio a lo largo de 18 países en el mundo.</span><span style="color: rgb(51, 51, 51); font-family: 'Open Sans', sans-serif;"><br></span></p></div>
+</div></div>
+                        <div class="art-layout-cell art-content"><article class="art-post art-article">
+                                <div class="art-postmetadataheader">
+                                        <h2 class="art-postheader">Subpage 1</h2>
+                                    </div>
+                                                
+                <div class="art-postcontent art-postcontent-0 clearfix"><div class="art-content-layout">
+    <div class="art-content-layout-row">
+    <div class="art-layout-cell layout-item-0" style="width: 100%" >
+<div id="0b4e6" style="position: relative; display: inline-block; z-index: 0;   " class="art-collage">
+<div class="art-slider art-slidecontainer0b4e6" data-width="560" data-height="349">
+    <div class="art-slider-inner">
+<div class="art-slide-item art-slide0b4e60" >
+
+
+</div>
+<div class="art-slide-item art-slide0b4e61" >
+
+
+</div>
+<div class="art-slide-item art-slide0b4e62" >
+
+
+</div>
+<div class="art-slide-item art-slide0b4e63" >
+
+
+</div>
+<div class="art-slide-item art-slide0b4e64" >
+
+
+</div>
+<div class="art-slide-item art-slide0b4e65" >
+
+
+</div>
+
+    </div>
+</div>
+<div class="art-slidenavigator art-slidenavigator0b4e6" data-left="0.5042017" data-top="0">
+<a href="#" class="art-slidenavigatoritem"></a><a href="#" class="art-slidenavigatoritem"></a><a href="#" class="art-slidenavigatoritem"></a><a href="#" class="art-slidenavigatoritem"></a><a href="#" class="art-slidenavigatoritem"></a><a href="#" class="art-slidenavigatoritem"></a>
+</div>
+
+
+
+    </div>
+
+    </div>
+    </div>
+</div>
+<div class="art-content-layout">
+    <div class="art-content-layout-row">
+    <div class="art-layout-cell layout-item-1" style="width: 100%" >
+        <p>Los <strong data-start="467" data-end="490">panes de caja Bimbo</strong>, también llamados <strong data-start="509" data-end="527">panes de molde</strong>, son los más comunes y versátiles. Vienen rebanados en un empaque rectangular y se usan sobre todo para sándwiches, tostadas y desayunos<span style="font-weight: bold;"><br></span></p><p><a href="#" class="art-button">Read more</a></p>
+    </div>
+    </div>
+</div>
+</div>
+
+
+</article></div>
+                    </div>
+                </div>
+            </div><footer class="art-footer">
+<p>https://www.facebook.com/BimboMexico/ &nbsp;| <a href="#">https://www.instagram.com/bimbo_mexico/</a></p>
+<p>Copyright © 2025. All Rights Reserved.</p>
+</footer>
+
+    </div>
+    <p class="art-page-footer">
+        <span id="art-footnote-links"><a href="http://www.artisteer.com/" target="_blank">Web Template</a> created with Artisteer.</span>
+    </p>
+</div>
+
+
+</body></html>
